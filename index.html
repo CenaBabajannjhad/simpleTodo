@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        li{
+            display: flex;
+            align-items: center;
+        }
+        .complite{
+            text-decoration: line-through;
+            color: gray;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1 style="text-align: center;">todoList</h1>
+
+    <div style="text-align: center;">
+        <input id="input" type="text" placeholder="enter your todo...">
+        <button id="add">add</button>
+    </div>
+
+    <ul id="root"></ul>
+
 
     <script src="main.js"></script>
 </body>
