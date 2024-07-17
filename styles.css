@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  background: #80e1ff;
+}
+.complite {
+  text-decoration: line-through;
+  color: gray !important;
+}
+/* header */
+.header {
+  padding: 0px 50px;
+}
+/* title */
+.title {
+  font-size: 3rem;
+  text-align: center;
+  padding: 10px;
+  color: rgb(53, 53, 53);
+  text-shadow: 0px 3px 0px #0000004d;
+}
+/* form */
+.form {
+  padding: 0px 50px;
+}
+/* input container */
+.input {
+  width: 80%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+}
+.input:focus {
+  outline: none;
+}
+.add {
+  float: right;
+  border: none;
+  padding: 10px 28px;
+  border-radius: 10px;
+}
+.add:hover {
+  cursor: pointer;
+}
+/* li */
+.li {
+  margin: 15px 0px 15px 0px;
+  padding: 0px 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.value-container {
+  border: none;
+  background: none;
+  color: rgb(35, 35, 35);
+  width: 50%;
+  font-size: 24px;
+}
+.value-container:focus {
+  outline: none;
+}
+/* delete button */
+.li > button {
+  border: none;
+  margin-left: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.li > button:hover {
+  cursor: pointer;
+}
+.li > #delete {
+  background: rgb(255, 61, 61);
+  color: white;
+}
+.li > #edit {
+  background: #5a68d0;
+  color: white;
+}
+.li > #complite {
+  background: rgb(54, 139, 54);
+  color: white;
+}
+/* done button */
+.done {
+  margin: 0px 60px;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: #bc2bfb;
+  color: white;
+}
+.done:hover {
+  cursor: pointer;
+}

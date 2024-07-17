@@ -24,7 +24,9 @@ function Dom(value){
     // append
     root.appendChild(li);
     li.appendChild(valueContainer);
+    li.classList.add('li');
     valueContainer.value = value;
+    valueContainer.classList.add('value-container')
     valueContainer.setAttribute('readonly' , 'readonly')
     li.appendChild(deleteBtn);
     deleteBtn.textContent = 'delete'
@@ -45,6 +47,7 @@ document.getElementById('root').addEventListener('click' , (event) => {
     }else if(event.target.id === 'edit'){
         let doneBtn = document.createElement('button')
         doneBtn.textContent = 'DONE'
+        doneBtn.classList.add('done')
         root.appendChild(doneBtn)
         
         event.target.previousElementSibling.previousElementSibling.removeAttribute('readonly' , 'readonly')

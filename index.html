@@ -4,26 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        li{
-            display: flex;
-            align-items: center;
-        }
-        .complite{
-            text-decoration: line-through;
-            color: gray;
-        }
-    </style>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <h1 style="text-align: center;">todoList</h1>
+    <header class="header">
+        <h1 class="title">todoList</h1>
+    </header>
 
-    <div style="text-align: center;">
-        <input id="input" type="text" placeholder="enter your todo...">
-        <button id="add">add</button>
-    </div>
+    <form class="form" action="#">
+        <div class="input-container">
+            <input class="input" id="input" type="text" placeholder="enter your todo...">
+            <button class="add" id="add">add</button>
+        </div>
+    </form>
 
-    <ul id="root"></ul>
+    <main>
+        <ul id="root"></ul>
+    </main>
+
 
 
     <script src="main.js"></script>
