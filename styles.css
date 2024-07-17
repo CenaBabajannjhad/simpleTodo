@@ -18,7 +18,8 @@ body {
 }
 /* header */
 .header {
-  padding: 0px 50px;
+  width: 80%;
+  margin: 0px auto;
 }
 /* title */
 .title {
@@ -30,11 +31,12 @@ body {
 }
 /* form */
 .form {
-  padding: 0px 50px;
+  width: 80%;
+  margin: 0px auto;
 }
 /* input container */
 .input {
-  width: 80%;
+  width: 78%;
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
@@ -43,19 +45,22 @@ body {
   outline: none;
 }
 .add {
+  width: 20%;
+  padding: 10px 0px;
   float: right;
   border: none;
-  padding: 10px 28px;
   border-radius: 10px;
 }
 .add:hover {
   cursor: pointer;
 }
 /* li */
+ul{
+  width: 80%;
+  margin: 0px auto;
+  padding: 15px 0px;
+}
 .li {
-  margin: 15px 0px 15px 0px;
-  padding: 0px 50px;
-
   display: flex;
   align-items: center;
   justify-content: center;

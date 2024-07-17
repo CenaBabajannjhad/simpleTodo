@@ -3,15 +3,13 @@ let input = document.getElementById('input');
 let root = document.getElementById('root');
 
 
-addButton.addEventListener('click' , init)
-
-
-function init(){
+addButton.addEventListener('click' , () =>{
     let inputValue = input.value;
-    Dom(inputValue)
-    resetInput()
-}
-
+    if(inputValue){
+        Dom(inputValue)
+        resetInput()
+    }
+})
 
 function Dom(value){
 
@@ -45,10 +43,11 @@ document.getElementById('root').addEventListener('click' , (event) => {
 
 
     }else if(event.target.id === 'edit'){
+        let li = document.querySelector('li');
         let doneBtn = document.createElement('button')
         doneBtn.textContent = 'DONE'
         doneBtn.classList.add('done')
-        root.appendChild(doneBtn)
+        li.appendChild(doneBtn)
         
         event.target.previousElementSibling.previousElementSibling.removeAttribute('readonly' , 'readonly')
         event.target.previousElementSibling.previousElementSibling.focus();
